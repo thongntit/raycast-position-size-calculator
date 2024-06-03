@@ -1,0 +1,36 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "positionsize-calculator",
+  "title": "Position Size Calculator",
+  "description": "This is a simple calculator to calculate the position size based on the risk percentage and the stop loss in pips.",
+  "icon": "command-icon.png",
+  "author": "hiraism",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Calculate",
+      "description": "Calculate the position size based on the risk percentage and the stop loss in pips.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.75.2",
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
